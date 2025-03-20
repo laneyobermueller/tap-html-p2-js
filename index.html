@@ -28,7 +28,8 @@
     <p style="margin-top: -20px;">Dog Insurance Premium Calculator</p>
     <hr>
 
-    <form action="process.html" method="get">
+    <!-- <form action="process.html" method="get"> -->
+    <form onclick="return false">
         <!-- Age -->
         <div class="fl">
             <label for="age">Age in years:</label>
@@ -59,7 +60,15 @@
             </select>
         </div>
 
-        <div style="clear: both;"><button type="submit">Calculate Premium</button></div>
+        <!-- Premium -->
+        <div class="f1">
+            <label for="premium">Premium</label>
+            <span id="premcalc">---</span>
+        </div>
+
+        <div style="clear: both;">
+            <button id="calcbtn">Calculate Premium</button>
+        </div>
     </form>
     <hr>
     <script src="script.js"></script>
